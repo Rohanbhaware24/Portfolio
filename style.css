@@ -1,0 +1,798 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body {
+    flex-direction: row;
+    background-color: #191f36;
+    color: #fff;
+}
+
+section {
+    /* padding-top: 100px; */
+    /* margin-top: 100px; */
+    padding: 1rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: #191f36;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    /* font-weight: 700; */
+    /* cursor: default; */
+}
+
+.navbar a {
+    /* font-size: 1.5rem; */
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+#menu-icon {
+    /* font-size: 3.6rem; */
+    color: #fff;
+    display: none;
+}
+
+.home {
+    padding-top: 200px;
+    /* background-color: red; */
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: rgb(0, 110, 255);
+}
+
+.home-contact {
+    font-display: flex;
+}
+
+.home-contact h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-contact p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#name {
+    font-size: 40px;
+}
+
+.home-img {
+    background-image: url('profile.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    width: 600px;
+    border-radius: 50%;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.1rem 1.0rem 0.5rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: rgba(68, 68, 255, 0.321);
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2.8rem;
+    /* background: rgb(45, 30, 255); */
+    background: rgb(0, 163, 217);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.about {
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: #191f36;
+}
+.about-img {
+    height: 450px;
+    width: 1300px;
+    background-image: url('profile.jpg');
+    background-size: cover;
+    position: center;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 139, 194);
+    box-shadow: 0 0 1.6rem rgb(1, 125, 174);
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    font-size: 3.2rem;
+    text-align: left;
+    line-height: 1;
+}
+
+.about-content h3 {
+    font-size: 2.3rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 rem;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services h3 {
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services {
+    padding-top: 100px;
+    margin: auto;
+}
+
+.services-container {
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.services-box {
+    flex: 1 1 30rem;
+    background: #232b49;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #191f36;
+    transition: .5s ease;
+    height: 350px;
+}
+
+.services-container .services-box:hover {
+    border-color: rgb(1, 156, 218);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: #fff;
+}
+
+.services-box h3 {
+    font-size: 25px;
+}
+
+
+
+.portfolio {
+    padding-top: 100px;
+    margin-bottom: 2.5rem;
+    background: #232b49;
+}
+
+.portfolio h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #191f36;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transform: .5s ease;
+    opacity: 0.7;
+}
+
+.portfolio-layer {
+    height: 200px;
+    width: 300px;
+    color: black;
+    background-color: rgb(1, 156, 218);
+    text-align: center;
+}
+
+.portfolio-layer h4 {
+    font-size: 1.5rem;
+}
+
+.portfolio-layer a {
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1.1rem;
+    background: rgb(0, 163, 217);
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.portfolio-layer:hover {
+    border: 3px solid rgb(0, 139, 194);
+    box-shadow: 0 0 1.6rem rgb(1, 125, 174);
+}
+
+.hedding{
+    text-align: center;
+}
+.contact{
+    padding-top: 88px;
+}
+.contact h2 {
+    margin-bottom: 2rem;
+}
+.contact form {
+    /* margin-left: 330px;
+    max-width: 70rem; */
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input ,.contact form textarea{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #232b49;
+    margin: .7rem 0;
+    border: none;
+}
+.contact form .input-box input{
+    width: 30%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.con{
+    text-align: center;
+    font-size: 1.2;
+}
+.bt{
+    margin: 1rem;
+    border: none;
+    padding: 1rem 2.8rem;
+    background: rgb(0, 163, 217);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+/* }
+@media (max-width:1200px){
+    html{
+        font-size:55%;
+    }
+}
+
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    .section{
+        padding: 10rem 3%;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+}
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 2px solid blue;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.1rem 1.0rem 0.5rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: rgba(68, 68, 255, 0.321);
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2.8rem;
+    background: rgb(0, 163, 217);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-img {
+    padding-right: 250px;
+    height: 400px;
+    width: 2000px;
+    background-image: url('profile.jpg');
+    background-size: cover;
+    position: center;
+    /* border-radius: 30px; */
+    border: 3px solid rgb(0, 139, 194);
+    box-shadow: 0 0 1.6rem rgb(1, 125, 174);
+}
+
+
+.about-content h3 {
+    font-size: 2.3rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services h3 {
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services {
+    padding-top: 100px;
+    margin: auto;
+}
+
+.services-container {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-box {
+    flex: 1 1 30rem;
+    background: #232b49;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #191f36;
+    transition: .5s ease;
+    height: 350px;
+}
+
+.services-container .services-box:hover {
+    border-color: rgb(1, 156, 218);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: #fff;
+}
+
+.services-box h3 {
+    font-size: 25px;
+}
+
+.portfolio {
+    padding-top: 100px;
+    margin-bottom: 2.5rem;
+    background: #232b49;
+}
+
+.portfolio h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #191f36;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.portfolio-layer {
+    height: 200px;
+    width: 100%;
+    color: black;
+    background-color: rgb(1, 156, 218);
+    text-align: center;
+}
+
+.portfolio-layer h4 {
+    font-size: 1.5rem;
+}
+
+.portfolio-layer a {
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1.1rem;
+    background: rgb(0, 163, 217);
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.portfolio-layer:hover {
+    border: 3px solid rgb(0, 139, 194);
+    box-shadow: 0 0 1.6rem rgb(1, 125, 174);
+}
+
+.hedding {
+    text-align: center;
+}
+
+.contact {
+    padding-top: 88px;
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #232b49;
+    margin: .7rem 0;
+    border: none;
+}
+
+.contact form .input-box input {
+    width: 30%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.con {
+    text-align: center;
+    font-size: 1.2;
+}
+
+.bt {
+    margin: 1rem;
+    border: none;
+    padding: 1rem 2.8rem;
+    background: rgb(0, 163, 217);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem rgb(88, 88, 255);
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+@media (min-width: 768px) {
+    .home {
+        flex-direction: row;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .services-container {
+        flex-direction: row;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .home-contact h3 {
+        font-size: 25px;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .home-contact h3 {
+        font-size: 20px;
+    }
+
+    #name {
+        font-size: 25px;
+    }
+
+    .home-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .about-img {
+        height: 40px;
+        width: 100px;
+        background-image: url('profile.jpg');
+        background-size: cover;
+        position: center;
+        /* border-radius: 30px; */
+        border: 3px solid rgb(0, 139, 194);
+        box-shadow: 0 0 1.6rem rgb(1, 125, 174);
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    .services h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-box {
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .services-box i {
+        font-size: 5rem;
+    }
+
+    .services-box h3 {
+        font-size: 20px;
+    }
+
+    .portfolio h2 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-layer a {
+        font-size: 1rem;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%;
+    }
+}
